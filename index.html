@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delay</title>
+	<link rel="stylesheet" type="text/css" href="index.css" />
+	<script src="https://kit.fontawesome.com/7a5e17e072.js" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="index.js">
+	</script>
+
+</head>
+<body>
+	<h1>8051 Microcontroller</h1>
+	<div id="flex0">
+		<div id="flex1">
+			<img src="timerdelay.jpg" alt="steps to delay img" style="width:100%">
+		</div>
+		<div id="flex2">
+			<p style="color:black;background-color:aqua;opacity:1.0;width: 80%;font-size: 20px;font-weight: bolder;font-family:Times New Roman;margin-right: auto;border:0px groove white;padding: 30px;border-radius: 10px;" >
+				Designing a delay program using 8051 timers.<br><br>
+				<i class="fas fa-cannabis"></i>While designing delay programs in 8051, calculating the initial value that has to be loaded inot TH and TL registers forms a very important thing. Let us see how it is done.<br><br>
+
+				<i class="fas fa-cannabis"></i>Assume the processor is clocked by a 12MHz crystal.<br><br>
+				<i class="fas fa-cannabis"></i>That means, the timer clock input will be 12MHz/12 = 1MHz<br><br>
+				<i class="fas fa-cannabis"></i>That means, the time taken for the timer to make one increment = 1/1MHz = 1uS<br><br>
+				<i class="fas fa-cannabis"></i>For a time delay of “X” uS the timer has to make “X” increments.<br><br>
+				<i class="fas fa-cannabis"></i>2^16 = 65536 is the maximim number of counts possible for a 16 bit timer.<br><br>
+				<i class="fas fa-cannabis"></i>Let TH be the value value that has to be loaded to TH registed and TL be the value that has to be loaded to TL register.<br><br>
+				<i class="fas fa-cannabis"></i>Then, THTL = XXYY( Hexadecimal equivalent of (65536-X) where (65536-X) is considered in decimal.)<br><br>
+				<i class="fas fa-cannabis"></i>Load this value to the timer register.&nbsp;&nbsp;&nbsp;&nbsp;
+				TH=XXh&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TL=YYh
+			</p>
+		</div>
+	</div><br><br>
+	<div id="box">
+		<form name="delayform"  align="center" onmouseover ="change(this)" onmouseout="retain(this)">
+			<!--<font style="font-size: 20px;font-weight: bolder;">Frequency (in Khz):</font><input type="text" name="fre" id="fre" value="0"><br>OR<br> -->
+			<p style="color:white;font-size:20px;font-weight: bolder;font-family: Georgia;">Here frquency field and Time field (input) are the frequency and time period of the square wave to be generated</p>
+			
+			<br><br>
+			<font style="font-size: 20px;font-weight: bolder;">Time (in ms):</font><input type="text" name="time" id="time" ><br><br>
+			<font style="font-size: 20px;font-weight: bolder;">Delay (in ms):</font><input type="text" name="delay" id="delay" onfocus ="disable1()" onblur="undisable1()"><br><br>
+			<font style="font-size: 20px;font-weight: bolder;">Count Value:</font><input type="text" name="count" id="count" onfocus ="disable2()" onblur="undisable2()"><br><br>
+			<font style="font-size: 20px;font-weight: bolder;">CV(in hex):</font><input type="text" name="hex" id="hex" onfocus ="disable3()" onblur="undisable3()"><br><br>
+			<input type="button" onclick="validate()" class="button" name="delaytime" value="Calculate"/>
+			<input type="reset" value="RESET" name="reset" class="reset"><br><br>
+		</form>
+		<div id="box1" >
+			<form name="fre" style="background-image: url(bg4.jpg);background-size: cover;width:400px;height:500px;box-shadow: 1px  1px 1px 4px white" align="center" onmouseover ="change(this)" onmouseout="retain(this)"  >
+				<br><br>
+				<p style="color:darkblue;font-size:20px;font-weight: bolder;font-family: Georgia;">Here frequency field(input) is the frequency of the square wave to be generated using 8051 ALP<br><br>
+					<font color="black">All the values of time and delay are in millisecs(ms)</font></p><br>
+				<p style="color:lime;background-color: black;font-size:20px;font-weight: bolder;font-style: italic;"> Frequency not given !! No worries ..find here</p><br>
+				<font style="font-size: 20px;font-weight: bolder;">Frequency(in Khz):</font><input type="text" name="frequency" id="fre"><br><br>
+				<b id="peroid" style="font-size: 20px;font-family:century;"></b><br><br>
+				<input type="button" class="button2" name="time" value="Calculate Time" onclick="peroid()"/>
+			</form>
+		</div>
+	</div><br><br>
+	<div style="background-color: white;text-align: center;margin: 0px auto 0px auto;padding: 20px">
+		<b style="font-size: 30px;">8051 Timers Register Description<b><br><br>
+		TMOD Register<br>
+		<p style="font-size: 25px;color: blue">If the Count Value is 0xFFBE(say) we can use Timer mode 2 i.e 8 bit auto relaod and TH0/1=BE;</p><br>
+		<table style="width:400px;height: 80px;font-size: 20px;" align="center" >
+			<tr>
+				<th>
+					Gate
+				</th>
+				<th>
+					C/T
+				</th>
+				<th>
+					M1
+				</th>
+				<th>
+					M0
+				</th>
+			</tr>
+			<tr>
+				<th colspan="2">
+					Timer 1
+				</th>
+				<th colspan="2">
+					Timer 0
+				</th>
+			</tr>
+			
+		</table><br>
+		<b style="font-size:20px;text-align: justify;">
+			Mode 1 and 2 are timer modes used in 8051 microcontroller.
+			If the Count value is less than 256 or hex value FF then the timer works in mode 2 and it is 8 bit auto relaod.
+			If the count value is greater than 256 then the timer works in mode 1 and 16 bit .
+		</b><br><br>
+		<table style="width:400px;height:100px;font-size: 20px;" align="center" >
+			<tr>
+				<th>
+					M1
+				</th>
+				<th>
+					M0
+				</th>
+				<th>
+					MODE
+				</th>
+				<th>
+					DESCRIPTION
+				</th>
+			</tr>
+			<tr>
+				<td>
+					0
+				</td>
+				<td>
+					0
+				</td>
+				<td>
+					Mode 0
+				</td>
+				<td>
+					13 bit timer
+				</td>
+			</tr>
+			<tr>
+				<td>
+					0
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					Mode 1 
+				</td>
+				<td>
+					16 bit timer
+				</td>
+			</tr>
+			<tr>
+				<td>
+					1
+				</td>
+				<td>
+					0
+				</td>
+				<td>
+					Mode 2
+				</td>
+				<td>
+					8 bit auto reload  
+				</td>
+			</tr>
+			<tr>
+				<td>
+					1
+				</td>
+				<td>
+					1
+				</td>
+				<td>
+					Mode 3
+				</td>
+				<td>
+					split timr
+				</td>
+			</tr>
+					
+		</table><br>
+
+
+	</div>
+</body>
+</html>
+<!--<img src="timermode.jpg" alt="timer mode" style="margin:0px auto 0px auto;border-radius: 10px;border:2px groove black;padding:50px 20px 20px 20px;background-color:black">
+if(f==0){
+				if(result2==false){
+						alert("enter Only numbers");
+				}
+				else{
+					d.value=1/(2*f*1000);
+				}
+			}-->
