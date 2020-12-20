@@ -1,5 +1,5 @@
 body{
-			background-image: url("background.jpg");
+			background-image: url("images\\background.jpg");
 			background-size:contain;
 		}
 		h1{
@@ -11,7 +11,7 @@ body{
 		}
 		form{
 			background-color:lightgray;
-			background-image: url(bg5.jpg);
+			background-image: url(images\\bg5.jpg);
 			background-size: cover;
 			border:2px groove black;
 			height: 600px;
