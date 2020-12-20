@@ -82,7 +82,7 @@ body{
 			padding: 10px;
 
 		}
-		@media(max-width:900px){
+		@media(max-width:1300px){
 			#flex0{
 			display: flex;
 			width: 100%;
@@ -96,6 +96,8 @@ body{
 			padding: 10px;
 
 		}
+                }
+                @media(max-width:900px){
 		#box{
 			display: flex;
                         justify-content:space-between;
