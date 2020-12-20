@@ -50,7 +50,7 @@ body{
 		#box{
 			display: flex;
 			justify-content: space-around;
-			flex-wrap: wrap;
+			
 		}
 
 		.button2:hover{
@@ -95,6 +95,11 @@ body{
 			width:100%;
 			padding: 10px;
 
+		}
+		#box{
+			display: flex;
+			justify-content: space-around;
+			flex-wrap: wrap;
 		}
 
 		}
