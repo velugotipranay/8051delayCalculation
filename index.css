@@ -11,7 +11,7 @@ body{
 		}
 		form{
 			background-color:lightgray;
-			background-image: url(images\\bg5.jpg);
+			background-image: url(images\\form1bg.jpg);
 			background-size: cover;
 			border:2px groove black;
 			height: 600px;
@@ -82,7 +82,7 @@ body{
 			padding: 10px;
 
 		}
-		@media(max-width:900px){
+		@media(max-width:1200px){
 			#flex0{
 			display: flex;
 			width: 100%;
