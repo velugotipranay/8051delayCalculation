@@ -16,7 +16,7 @@ function change(x){
 		
 		function validate(){
 			//var f=parseInt(document.delayform.fre.value);
-			document.getElementById("delay").disabled=false;
+			document.getElementByClass("delay").disabled=false;
 			document.getElementById("count").disabled=false;
 			document.getElementById("hex").disabled=false;
 			var t=parseFloat(document.delayform.time.value);
