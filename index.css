@@ -34,10 +34,12 @@ body{
 			border-radius: 10px;
 			outline: none;
 		}
-		.hover:hover{
+		#delay:hover{
+			cursor:not-allowed; background-color:pink;color:white;}
+                #count:hover{
                        cursor:not-allowed; background-color:pink;color:white;}
-              
-               
+                #hex:hover{
+                       cursor:not-allowed; background-color:pink;color:white;}           
 
 		#fre:hover{
 			background-color:lightgray;
