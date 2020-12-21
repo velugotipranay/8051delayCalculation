@@ -37,13 +37,13 @@
 	<div id="box">
 		<form name="delayform"  align="center" onmouseover ="change(this)" onmouseout="retain(this)">
 			<!--<font style="font-size: 20px;font-weight: bolder;">Frequency (in Khz):</font><input type="text" name="fre" id="fre" value="0"><br>OR<br> -->
-			<p style="color:darkblue;font-size:20px;font-weight: bolder;font-family: Georgia;">Here frquency field and Time field (input) are the frequency and time period of the square wave to be generated</p>
+			<p style="color:darkblue;font-size:20px;font-weight: bolder;font-family: Georgia;">Here  Time field (input) is the time period of the square wave to be generated . If you want to create 'x' milliseconds delay  then enter the value '2x' in time field for getting CV</p>
 			
 			<br><br>
 			<font style="font-size: 20px;font-weight: bolder;">Time (in ms):</font><input type="text" name="time" id="time" ><br><br>
-			<font style="font-size: 20px;font-weight: bolder;">Delay (in ms):</font><div class="tooltip"><input type="text" name="delay" id="delay" onfocus ="disable1(this)" onblur="undisable1(this)"><span class="hovertext">Can't Modify.Click on Calculate</span></div><br><br>
-			<font style="font-size: 20px;font-weight: bolder;">Count Value:</font><div class="tooltip"><input type="text" name="count" id="count" onfocus ="disable2()" onblur="undisable2()"><span class="hovertext">Can't Modify.Click on Calculate</span></div><br><br>
-			<font style="font-size: 20px;font-weight: bolder;">CV(in hex):</font><div class="toolstip"><input type="text" name="hex" id="hex" onfocus ="disable3()" onblur="undisable3()"><span class="hovertext">Can't Modify.Click on Calculate</span></div><br><br>
+			<font style="font-size: 20px;font-weight: bolder;">Delay (in ms):</font><input type="text" name="delay" class="hover" onfocus ="disable1(this)" onblur="undisable1(this)"><br><br>
+			<font style="font-size: 20px;font-weight: bolder;">Count Value:</font><input type="text" name="count" class="hover" onfocus ="disable2()" onblur="undisable2()"><br><br>
+			<font style="font-size: 20px;font-weight: bolder;">CV(in hex):</font><input type="text" name="hex" class="hover" onfocus ="disable3()" onblur="undisable3()"><br><br>
 			<input type="button" onclick="validate()" class="button" name="delaytime" value="Calculate"/><br><br>
 			<input type="reset" value="RESET" name="reset" class="reset"><br><br>
 		</form>
