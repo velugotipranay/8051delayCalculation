@@ -30,7 +30,7 @@ body{
 		#time:hover{
 			background-color:white;
 			border:2px ridge black;			
-			box-shadow:1px 1px 1px 3px lime;
+			box-shadow:1px 1px 1px 3px blue;
 			border-radius: 10px;
 			outline: none;
 		}
@@ -44,7 +44,7 @@ body{
 		#fre:hover{
 			background-color:white;
 			border:2px ridge black;
-			box-shadow:1px 1px 3px 3px lime;
+			box-shadow:1px 1px 3px 3px blue;
 			border-radius: 10px;
 			outline: none;
 		}
