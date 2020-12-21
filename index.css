@@ -30,7 +30,7 @@ body{
 		#time:hover{
 			background-color:lime;
 			border:2px ridge black;
-			box-shadow:1px 1px 2px 3px black;
+			box-shadow:1px 1px 5px 3px aqua;
 			border-radius: 10px;
 			outline: none;
 		}
