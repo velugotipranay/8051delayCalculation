@@ -27,8 +27,8 @@ body{
 			font-family: georgia;
 			font-weight: bold;
 		}
-		#time:hover{
-			background-color:lime;
+		#time,#fre:hover{
+			background-color:lightgray;
 			border:2px ridge black;
 			box-shadow:1px 1px 5px 3px aqua;
 			border-radius: 10px;
