@@ -28,9 +28,9 @@ body{
 			font-weight: bold;
 		}
 		#time:hover{
-			background-color:white;
+			background-color:lime;
 			border:2px ridge black;
-			box-shadow:1px 1px 1px 4px aqua;
+			box-shadow:1px 1px 1px 4px black;
 			border-radius: 10px;
 			outline: none;
 		}
