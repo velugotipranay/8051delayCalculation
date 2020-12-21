@@ -34,7 +34,7 @@ body{
 			border-radius: 10px;
 			outline: none;
 		}
-		#delay{
+		#delay:hover{
                        cursor:not-allowed; background-color: skyblue;}
   
 
