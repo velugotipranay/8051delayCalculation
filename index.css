@@ -35,13 +35,18 @@ body{
 			outline: none;
 		}
 		#delay:hover{
-                       cursor:not-allowed; background-color:pink;color:white;position:relative;display:inline-block;border:1px solid black}
+                       cursor:not-allowed; background-color:pink;color:white;}
                 #count:hover{
-                       cursor:not-allowed; background-color:pink; color:white;position:relative;display:inline-block;border:1px solid black}
+                       cursor:not-allowed; background-color:pink; color:white;}
                 #delay:hover{
-                       cursor:not-allowed; background-color:pink; color:white;position:relative;display:inline-block;border:1px solid black}
+                       cursor:not-allowed; background-color:pink; color:white;}
                 #hex:hover{
-                       cursor:not-allowed; background-color: pink; color:white;position:relative;display:inline-block;border:1px solid black}
+                       cursor:not-allowed; background-color: pink; color:white;}
+                .tooltip {
+			  position: relative;
+			  display: inline-block;
+			  border-bottom: 1px dotted black;
+			}
                 .tooltip.hovertext {
 			  visibility: hidden;
 			  width: 120px;
@@ -58,7 +63,7 @@ body{
 
 		.tooltip:hover.hovertext {
 		  visibility: visible;
-		}
+		} 
 
 		#fre:hover{
 			background-color:lightgray;
