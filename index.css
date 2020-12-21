@@ -35,14 +35,30 @@ body{
 			outline: none;
 		}
 		#delay:hover{
-                       cursor:not-allowed; background-color:red;color:white}
+                       cursor:not-allowed; background-color:pink;color:white;position:relative;display:inline-block;border:1px solid black}
                 #count:hover{
-                       cursor:not-allowed; background-color: red; color:white}
+                       cursor:not-allowed; background-color:pink; color:white;position:relative;display:inline-block;border:1px solid black}
                 #delay:hover{
-                       cursor:not-allowed; background-color: red; color:white}
+                       cursor:not-allowed; background-color:pink; color:white;position:relative;display:inline-block;border:1px solid black}
                 #hex:hover{
-                       cursor:not-allowed; background-color: red; color:white}
+                       cursor:not-allowed; background-color: pink; color:white;position:relative;display:inline-block;border:1px solid black}
+                #delay.hovertext {
+			  visibility: hidden;
+			  width: 120px;
+			  background-color: black;
+			  color: #fff;
+			  text-align: center;
+			  border-radius: 6px;
+			  padding: 5px 0;
 
+			  /* Position the tooltip */
+			  position: absolute;
+			  z-index: 1;
+			}
+
+		#delay:hover.hovertext {
+		  visibility: visible;
+		}
 
 		#fre:hover{
 			background-color:lightgray;
