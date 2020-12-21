@@ -38,6 +38,8 @@ function change(x){
 			}
 		function disable1(){
 			document.getElementById("delay").disabled=true;
+			document.getElementById("delay").style.opacity="1.0";
+			
 		}
 		function undisable1(x){
 			x.disabled=false;
