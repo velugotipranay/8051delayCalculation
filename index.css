@@ -34,7 +34,9 @@ body{
 			border-radius: 10px;
 			outline: none;
 		}
-			
+		#delay{
+                       cursor:not-allowed; background-color: skyblue;}
+  
 
 
 		#fre:hover{
