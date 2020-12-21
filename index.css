@@ -27,10 +27,10 @@ body{
 			font-family: georgia;
 			font-weight: bold;
 		}
-		#time:hover:{
+		#time:hover{
 			background-color:lightgray;
 			border:2px ridge black;
-			box-shadow:1px 1px 3px 3px aqua;
+			box-shadow:1px 1px 1px 3px aqua;
 			border-radius: 10px;
 			outline: none;
 		}
