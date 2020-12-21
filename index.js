@@ -39,9 +39,9 @@ function change(x){
 		function disable1(){
 			document.getElementById("delay").disabled=true;
 		}
-		function undisable1(){
-			document.getElementById("delay").disabled=false;
-			document.getElementById("delay").style.opacity=0.85;
+		function undisable1(x){
+			x.disabled=false;
+			x.style.opacity="0.85";
 
 		}
 		function disable2(){
