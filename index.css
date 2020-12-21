@@ -34,36 +34,10 @@ body{
 			border-radius: 10px;
 			outline: none;
 		}
-		#delay:hover{
+		.hover:hover{
                        cursor:not-allowed; background-color:pink;color:white;}
-                #count:hover{
-                       cursor:not-allowed; background-color:pink; color:white;}
-                #delay:hover{
-                       cursor:not-allowed; background-color:pink; color:white;}
-                #hex:hover{
-                       cursor:not-allowed; background-color: pink; color:white;}
-                .tooltip {
-			  position: relative;
-			  display: inline-block;
-			  border-bottom: 1px dotted black;
-			}
-                .tooltip.hovertext {
-			  visibility: hidden;
-			  width: 120px;
-			  background-color: black;
-			  color: #fff;
-			  text-align: center;
-			  border-radius: 6px;
-			  padding: 5px 0;
-
-			  /* Position the tooltip */
-			  position: absolute;
-			  z-index: 1;
-			}
-
-		.tooltip:hover.hovertext {
-		  visibility: visible;
-		} 
+              
+               
 
 		#fre:hover{
 			background-color:lightgray;
