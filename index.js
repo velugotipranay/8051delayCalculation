@@ -41,6 +41,7 @@ function change(x){
 		}
 		function undisable1(){
 			document.getElementById("delay").disabled=false;
+			document.getElementById("delay").style.opacity=0.85;
 
 		}
 		function disable2(){
