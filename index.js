@@ -42,10 +42,10 @@ function change(x){
                         y.style.backgroundColor="skyblue";
 			
 		}
-		function undisable1(x){
-			x.disabled=false;
-			x.style.opacity="1.0";
-                        x.style.backgroundColor="white";
+		function undisable1(y){
+			y.disabled=false;
+			y.style.opacity="1.0";
+                        y.style.backgroundColor="white";
 
 		}
 		function disable2(){
