@@ -42,7 +42,7 @@ body{
                        cursor:not-allowed; background-color:pink; color:white;position:relative;display:inline-block;border:1px solid black}
                 #hex:hover{
                        cursor:not-allowed; background-color: pink; color:white;position:relative;display:inline-block;border:1px solid black}
-                #delay.hovertext {
+                .tooltip.hovertext {
 			  visibility: hidden;
 			  width: 120px;
 			  background-color: black;
@@ -56,7 +56,7 @@ body{
 			  z-index: 1;
 			}
 
-		#delay:hover.hovertext {
+		.tooltip:hover.hovertext {
 		  visibility: visible;
 		}
 
