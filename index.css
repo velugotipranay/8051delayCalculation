@@ -35,11 +35,11 @@ body{
 			outline: none;
 		}
 		#delay:hover{
-			cursor:not-allowed; background-color:pink;color:white;}
+			cursor:not-allowed; background-color:pink;color:darkblue;}
                 #count:hover{
-                       cursor:not-allowed; background-color:pink;color:white;}
+                       cursor:not-allowed; background-color:pink;color:darkblue;}
                 #hex:hover{
-                       cursor:not-allowed; background-color:pink;color:white;}           
+                       cursor:not-allowed; background-color:pink;color:darkblue;}           
 
 		#fre:hover{
 			background-color:lightgray;
