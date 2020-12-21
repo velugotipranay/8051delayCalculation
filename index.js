@@ -36,14 +36,16 @@ function change(x){
 					hex.value=count.toString(16);				
 				}
 			}
-		function disable1(){
-			document.getElementById("delay").disabled=true;
-			document.getElementById("delay").style.opacity="1.0";
+		function disable1(y){
+			y.disabled=true;
+			y.style.opacity="0.85";
+                        y.style.backgroundColor="sky-blue";
 			
 		}
 		function undisable1(x){
 			x.disabled=false;
-			x.style.opacity="0.85";
+			x.style.opacity="1.0";
+                        x.style.backgroundColor="white";
 
 		}
 		function disable2(){
