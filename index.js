@@ -39,7 +39,7 @@ function change(x){
 		function disable1(y){
 			y.disabled=true;
 			y.style.opacity="0.85";
-                        y.style.backgroundColor="sky-blue";
+                        y.style.backgroundColor="skyblue";
 			
 		}
 		function undisable1(x){
