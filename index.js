@@ -38,14 +38,12 @@ function change(x){
 			}
 		function disable1(y){
 			y.disabled=true;
-			y.style.opacity="0.85";
-                        y.style.backgroundColor="skyblue";
+
 			
 		}
-		function undisable1(y){
-			y.disabled=false;
-			y.style.opacity="1.0";
-                        y.style.backgroundColor="white";
+		function undisable1(x){
+			x.disabled=false;
+			
 
 		}
 		function disable2(){
