@@ -29,7 +29,7 @@ function change(x){
 				}
 				else{
 					d.value=t/2;	
-					var count=Math.round((65536-((d.value*1000)/1.0852)));
+					var count=Math.round((65536-((d.value*1000)/1.085)));
 					var cv=document.delayform.count;
 					var hex=document.delayform.hex;
 					cv.value=count;
